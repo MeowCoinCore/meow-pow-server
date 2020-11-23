@@ -27,7 +27,7 @@ public:
 		/** Web server/websocket listening address */
 		std::string bind_address{ boost::asio::ip::address_v6::loopback ().to_string () };
 		/** Web server/websocket listening port */
-		uint16_t port{ 8076 };
+		uint16_t port{ 5999 };
 		/** Number of web server IO threads. Since work generation is done asynchronously, a low thread count should suffice */
 		uint16_t threads{ static_cast<uint16_t> (std::thread::hardware_concurrency ()) };
 		/** The maximum size of the request queue. Attempt to request work when full will result in an error reply */

@@ -1,6 +1,6 @@
 // Get the ws[s]:// target from the command line, use a default is missing
 const args = process.argv.slice(2);
-const default_target = 'ws://[::1]:8076/websocket';
+const default_target = 'ws://[::1]:5999/websocket';
 const target = args.length > 0 ? args[0] : default_target;
 
 if (args.length == 0) {
